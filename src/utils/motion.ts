@@ -1,4 +1,4 @@
-export const textVariant = (delay) => {
+export const textVariant = (delay: string | number) => {
     return {
       hidden: {
         y: -50,
@@ -16,7 +16,7 @@ export const textVariant = (delay) => {
     };
   };
   
-  export const fadeIn = (direction, type, delay, duration) => {
+  export const fadeIn = (direction: string, type: string, delay: string | number, duration: string | number) => {
     return {
       hidden: {
         x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -37,7 +37,7 @@ export const textVariant = (delay) => {
     };
   };
   
-  export const zoomIn = (delay, duration) => {
+  export const zoomIn = (delay: string | number, duration: string | number) => {
     return {
       hidden: {
         scale: 0,
@@ -56,7 +56,7 @@ export const textVariant = (delay) => {
     };
   };
   
-  export const slideIn = (direction, type, delay, duration) => {
+  export const slideIn = (direction: string, type: string, delay: string | number, duration: string | number) => {
     return {
       hidden: {
         x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -75,7 +75,7 @@ export const textVariant = (delay) => {
     };
   };
   
-  export const staggerContainer = (staggerChildren, delayChildren) => {
+  export const staggerContainer = (staggerChildren: string | number, delayChildren: string | number) => {
     return {
       hidden: {},
       show: {

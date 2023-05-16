@@ -1,0 +1,4 @@
+{
+    // to make "Unknown at rule @applycss(unknownAtRules) at the position of @apply" error disappear
+    "css.lint.unknownAtRules": "ignore"
+}

@@ -1,8 +1,19 @@
+import { BrowserRouter } from "react-router-dom"
+
+import { About, Experience, Feedbacks, Tech, Works } from "./components"
+import AppLayout from "./components/AppLayout"
+
 const App = () => {
   return (
-    <>
-      Dev
-    </>
+    <BrowserRouter>
+      <AppLayout>
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+        <Feedbacks />
+      </AppLayout>
+    </BrowserRouter>
   )
 }
 
