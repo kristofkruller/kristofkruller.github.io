@@ -2,11 +2,12 @@ import { motion } from "framer-motion"
 
 import { ComputersCanvas } from "./canvas"
 import { hero } from "../constants"
+import { Link } from "react-router-dom"
 
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
-      <div className="paddingX absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5">
+      <div className="paddingX absolute inset-0 top-[100px] max-w-7xl mx-auto flex flex-row items-start gap-5">
         
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -33,8 +34,8 @@ const Hero = () => {
 
       <ComputersCanvas />
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
+      <div className='absolute xs:bottom-30 bottom-32 w-full flex justify-center items-center'>
+        <Link to='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{
@@ -48,7 +49,7 @@ const Hero = () => {
               className='w-3 h-3 rounded-full bg-secondary mb-1'
             />
           </div>
-        </a>
+        </Link>
       </div>
     </section>
     

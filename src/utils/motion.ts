@@ -1,4 +1,4 @@
-export const textVariant = (delay: string | number) => {
+export const textVariant = (delay?: string | number) => {
     return {
       hidden: {
         y: -50,
