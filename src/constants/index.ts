@@ -113,7 +113,15 @@ import {
       icon: docker,
     },
   ];
-  
+
+  const hero = [
+    {
+      introA: "I develop user interfaces",
+      introB: "and web applications",
+      introC: ""
+    },
+  ];
+
   const experiences = [
     {
       title: "React.js Developer",
@@ -262,4 +270,4 @@ import {
     },
   ];
   
-  export { navLinks, services, technologies, experiences, testimonials, projects };
+  export { navLinks, hero, services, technologies, experiences, testimonials, projects };
